@@ -1,0 +1,20 @@
+{
+    "name": "putyy/ck-name",
+    "description": "'create key name'",
+    "type": "library",
+    "keywords": ["create key name","redis"],
+    "homepage": "https://github.com/putyy/ck-name",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "putyy",
+            "email": "10945014@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "WGCKeyName\\": "src/"
+        }
+    }
+}
