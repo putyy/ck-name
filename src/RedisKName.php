@@ -18,40 +18,40 @@ use WGCKeyName\Abstracts\BaseAbstract;
 
 class RedisKName extends BaseAbstract
 {
-    const ZSET = 'zset';
+    const REDIS_ZSET = 'zset';
 
-    const SET  = 'set';
+    const REDIS_SET  = 'set';
 
-    const HASH = 'hash';
+    const REDIS_HASH = 'hash';
 
-    const KEY  = 'key';
+    const REDIS_KEY  = 'key';
 
-    const LIST = 'list';
+    const REDIS_LISTS = 'list';
 
     public static function getHashName($value = [])
     {
-        return self::compileKeyName($value, self::HASH);
+        return self::compileKeyName($value, self::REDIS_HASH);
     }
 
     public static function getZSetName($value = [])
     {
-        return self::compileKeyName($value, self::ZSET);
+        return self::compileKeyName($value, self::REDIS_ZSET);
 
     }
 
     public static function getSetName($value = [])
     {
-        return self::compileKeyName($value, self::SET);
+        return self::compileKeyName($value, self::REDIS_SET);
 
     }
 
     public static function getKeyName($value = [])
     {
-        return self::compileKeyName($value, self::KEY);
+        return self::compileKeyName($value, self::REDIS_KEY);
     }
 
     public static function getListName($value = [])
     {
-        return self::compileKeyName($value, self::LIST);
+        return self::compileKeyName($value, self::REDIS_LISTS);
     }
 }
